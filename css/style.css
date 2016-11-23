@@ -1,0 +1,757 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнул€ем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устран€ем отступы между €чейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию дл€ элементов форм (в частности дл€ checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы дл€ текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+    font-family: 'Quicksand', sans-serif;  /*font-family: 'Roboto Condensed', sans-serif;*/
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+@font-face{
+	font-family: "sans";
+	src: url("/fonts/OpenSans-Semibold.woff");
+}
+
+
+@font-face{
+	font-family: "bold";
+	src: url("/fonts/OpenSans-Bold.woff");
+}
+
+
+.center-block-main{
+	max-width:965px;
+	margin:0 auto;
+}
+
+header{
+	background:url("/images/bg-co.png")no-repeat center center;
+	height:769px;
+	position:relative;
+}
+
+.top-line{
+	min-height:88px;
+	background-color:rgba(0, 0, 0, 0.64);
+	width:100%;
+	
+}
+
+.logo{
+	float:left;
+}
+
+
+.contakt-basket{
+float:right;	
+	
+}
+
+.menu{
+	padding-right:180px;
+}
+
+.menu li{
+	float:left;
+	padding-left:20px;
+	list-style:none;
+	padding-top:5px;
+	font-family: "sans";
+}
+
+.menu a{
+	text-decoration:none;
+	color:#fff;
+}
+
+.regist p{
+	float:right;
+	padding-left:15px;
+}
+
+
+.header-top{
+	padding-top:25px;
+}
+
+
+.regist a{
+	background:#B2D138;
+	padding:7px 9px 7px 9px;
+	text-decoration:none;
+	color:#250F13;
+	border-radius:5px;
+	 box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	 float:left;
+}
+
+.regist span a{
+	background:#FFFFFF;
+}
+
+
+
+.spcial{
+	float:right;
+}
+
+.center-basc{
+	padding-top:90px;
+	text-align:center;
+
+	
+}
+
+.center-basc h1{
+	color:#fff;
+	font-size:32pt;
+	font-family: "sans";
+	line-height:2;
+}
+
+
+.center-basc p{
+	color:#fff;
+	font-size:18pt;
+	line-height:1.5;
+}
+
+.tratext{
+	width:50%;
+	padding:14px 0 14px 0;
+	margin-top:40px;
+	font-size:23px;
+	background:#E8E8E7;
+	border:none;
+	text-align:center;
+}
+
+.trasubmit{
+	
+	padding:15px 12px 15px 12px;
+	background:#4DB1AF;
+	color:#fff;
+	font-size:21px;
+	border:none;
+	margin-top:40px;
+-moz-box-shadow: inset 0 -6px #357776;
+-webkit-box-shadow: inset 0 -6px #357776;
+box-shadow: inset 0 -6px #357776;
+}
+.line{
+	border-left:1px solid red;
+}
+
+.block2-main{
+	margin-top:60px;
+} 
+
+.block2-main article{
+	float:left;
+	width:23%;
+   margin-left:2%;
+}
+
+
+
+		
+.block2-main article img{
+			display:block; margin:0 auto;
+		}
+		
+.block2-main p{
+	font-family: "sans";
+	color:#818181;
+	
+}
+
+.block2-main a{
+color:#fff;
+line-height:5;
+background:#9F2323;
+border-radius:5px;
+padding:15px 28px;
+text-decoration:none;
+}
+
+.block2-main span a{
+color:#fff;
+line-height:5;
+background:#37739B;
+border-radius:5px;
+padding:15px 28px;
+text-decoration:none;	
+}	
+
+
+.block-section{
+	margin-top:70px;
+	background:#F9F7F7;
+	
+	padding:90px 0 130px 0;
+}
+
+.block-section h1{
+	text-align:center;
+	color:#323131;
+	font-size:24pt;
+	font-family: "sans";
+	
+}
+
+.block-section p{
+	text-align:center;
+	color:#818181;
+	font-family: "sans";
+	padding-top:15px;
+}
+
+.block3-main{
+	margin-top:50px;
+}
+.block3-main article{
+	width:28%;
+	float:left;
+	text-align:center;
+	margin-left:5%;
+}
+
+
+		
+
+
+.block3-main h3{
+font-family: "bold";
+color:#474747;
+padding-top:10px;
+}
+
+.block3-main p{
+	font-size:10pt;
+	line-height:1.7;
+}
+
+
+.block4-main{
+	margin-top:60px;
+}
+
+.block4-main article{
+	width:28%;
+	float:left;
+	text-align:center;
+	margin-left:5%;
+}
+
+
+
+		
+	
+
+.block4-main h3{
+font-family: "bold";
+color:#474747;
+padding-top:10px;
+}
+
+.block4-main p{
+	font-size:10pt;
+	line-height:1.7;
+}
+
+.block-section1{
+	margin-top:40px;
+	text-align:center;
+}
+
+.block-section1 h1{
+	color:#333333;
+	font-family: "bold";
+	font-size:23pt;
+}	
+
+.block-section1 p{
+	color:#818181;
+	font-family: "bold";
+	padding-top:10px;
+}
+
+
+.block-section2{
+	margin-top:40px;
+	text-align:center;
+}
+
+.block-section2 h1{
+	color:#333333;
+	font-family: "bold";
+	font-size:23pt;
+}	
+
+.block-section2 p{
+	color:#000000;
+
+	padding-top:10px;
+}
+
+.block-section2 h3{
+	padding-top:10px;
+	font-family: "bold";
+}
+
+.block6-main{
+	margin-top:40px;
+}
+
+.block6-main article{
+	width:23%;
+	float:left;
+	margin-left:2%; 
+}
+
+
+		
+.block7-main{
+padding-top:30px;	
+}		
+
+.block7-main article{
+	width:23%;
+	float:left;
+	margin-left:2%;
+}
+
+
+
+.block-section3{
+	background:#F9FAFA;
+	border-top:2px dashed #4BAFAE;
+	margin-top:50px;
+	padding-top:40px;
+	position:relative;
+}		
+
+
+.block-section3 h1{
+	text-align:center;
+	color:#73C1BF;
+	font-family: "bold";
+	font-size:23pt;
+}
+
+.block8-main{
+	margin-top:40px;
+	
+}
+
+.bat{
+	position:absolute;
+	top:-12px;
+	
+}
+
+
+.ftrtext{
+	float:left;
+	width:22%;
+	height:50px;
+	text-align:center;
+	margin-left:20px;
+}
+
+.ftrsubmit{
+	text-align:center;
+	color:#fff;
+	width:22%;
+	background:#60BBB9;
+	border:none;
+	margin-left:20px;
+	height:50px;
+}
+
+	
+
+.block-section4{
+	background:#F9FAFA;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+.block9-main article{
+	float:left;
+	width:21%;
+	margin-left:3%;
+	
+}
+
+
+
+.block9-main article h3{
+	color:#4A4B4B;
+	font-size:15px;
+	font-family: "bold";
+
+	
+	
+}	
+	
+
+.block9-main article li{
+	list-style:none;
+	color:#A2B8B8;
+	line-height:0.1;
+	padding-top:25px;
+	font-size:13px;
+	font-family: "sans";
+}	
+
+.b_line{
+	border-bottom:1px solid #EDEDED;
+	margin-bottom:30px;
+}
+
+.b_line1{
+border-bottom:1px solid #9E9E9E;
+width:60%;	
+padding-top:10px;
+}
+
+
+.block10-main{
+	margin-top:50px;
+	
+}
+
+.block10-main article{
+	float:left;
+	width:24%;
+	margin-left:4%;
+}
+
+.block10-main article h3{
+	color:#4A4B4B;
+	font-size:15px;
+	font-family: "bold";
+
+	
+	
+}	
+	
+
+.block10-main article li{
+	list-style:none;
+	color:#A2B8B8;
+	line-height:0.1;
+	padding-top:25px;
+	font-size:13px;
+	font-family: "sans";
+}	
+
+
+.footer{
+	
+	background:#485151;
+}
+
+.bg-logo{
+	float:left;
+}
+	
+
+.fotr2{
+	float:right;
+	color:#fff;
+	padding-top:25px;
+}
+
+
+@media screen and (max-width:920px){
+	.block6-main article{
+	width:45%;
+	float:left;
+margin-top:15px;
+}
+
+
+.block7-main article{
+	width:45%;
+	float:left;
+	margin-top:15px;
+}
+
+
+
+
+	
+}
+
+
+@media screen and (max-width:830px){
+	
+	
+.ftrtext{
+	float:left;
+	width:50%;
+	height:50px;
+	text-align:center;
+	margin-left:20px;
+}
+
+.ftrsubmit{
+	text-align:center;
+	color:#fff;
+	width:50%;
+	background:#60BBB9;
+	border:none;
+	margin-left:20px;
+	height:50px;
+}
+
+}	
+
+@media screen and (max-width:830px){
+
+.center-basc h1{
+	color:#fff;
+	font-size:22pt;
+	font-family: "sans";
+	line-height:2;
+}
+
+.center-basc p{
+	color:#fff;
+	font-size:12pt;
+	line-height:1.5;
+}
+
+
+}
+
+@media screen and (max-width:710px){
+
+
+.block-section2 p{
+	font-size:12px;
+}
+	
+}
+
+
+@media screen and (max-width:650px){
+	
+	.block9-main article{
+	float:left;
+	width:45%;
+	margin-top:10px;
+}
+
+
+.block3-main article{
+	width:85%;
+	float:left;
+	text-align:center;
+	margin-left:5%;
+}
+
+.block4-main article{
+	width:85%;
+	float:left;
+	text-align:center;
+	margin-left:5%;
+}
+
+
+.block2-main article{
+	float:left;
+	width:80%;
+   margin-left:4%;
+}
+
+
+.block10-main article{
+	float:left;
+	width:90%;
+	margin-left:4%;
+}
+
+}	
+
+@media screen and (max-width:575px){
+	
+	
+	.center-basc h1{
+	color:#fff;
+	font-size:16pt;
+	font-family: "sans";
+	line-height:2;
+}
+
+.center-basc p{
+	color:#fff;
+	font-size:8pt;
+	line-height:1.5;
+}
+
+.block-section2 p{
+	font-size:9px;
+}
+
+
+.block-section1 h1{
+	color:#333333;
+	font-family: "bold";
+	font-size:12pt;
+}	
+
+.block-section1 p{
+	color:#818181;
+	font-family: "bold";
+	padding-top:1px;
+}	
+	
+}	
+
+
+@media screen and (max-width:490px){
+	
+.bg-logo{
+	float:none;
+	text-align:center;
+	
+}
+
+	
+
+.fotr2{
+	text-align:center;
+	float:none;
+	color:#fff;
+	
+}
+
+
+.block-section h1{
+	text-align:center;
+	color:#323131;
+	font-size:14pt;
+	font-family: "sans";
+	
+}
+
+.block-section p{
+	text-align:center;
+	color:#818181;
+	font-family: "sans";
+	padding-top:20px;
+	font-size:11px;
+}
+	
+	
+
+}	
+
+
+@media screen and (max-width:400px){
+	
+		.block6-main article{
+	width:90%;
+	float:left;
+margin-top:15px;
+}
+
+
+.block7-main article{
+	width:90%;
+	float:left;
+	margin-top:15px;
+}
+
+	
+	.block9-main article{
+	float:left;
+	width:90%;
+	margin-top:10px;
+}
+	
+	
+}	
+
